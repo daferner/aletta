@@ -1,0 +1,23 @@
+{
+   "menu": [
+      {
+         "index": "Startseite",
+         "team": "Team",
+         "aletta": "Dr. Aletta Georgii",
+         "aerztinnen": "Die Ärztinnen",
+         "philosophie": "Philosophie",
+         "leistungen": "Leistungen",
+         "ambulant": "Ambulante Operationen",
+         "aesthetisch": "Ästhetische Medizin",
+         "medizinische": "Medizinische Kosmetik",
+         "tcm": "Traditionelle Chinesische Medizin",
+         "behandlungszeiten": "Behandlungszeiten",
+         "anfahrt": "Anfahrt",
+         "links": "Links",
+         "aktuelles": "Aktuelles",
+         "berichte": "Wissenschaftliche Beiträge",
+         "imressum": "Impressum/Kontakt",
+         "datenschutz": "Datenschutzerklärung"
+      }
+   ]
+}

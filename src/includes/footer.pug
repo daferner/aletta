@@ -1,0 +1,46 @@
+footer
+  div.pfeil.prev
+    -var prevlink = ''
+    -var prevtext = ''
+    for text,link  in menupunke
+
+      if seite != 'index'
+         if seite == link
+            -const href = "./" + prevlink + ".pug"
+            a(href=href) 
+               span !{prevtext}
+      -prevlink = link
+      -prevtext = text
+
+    -var nextlink = false
+    for text,link  in menupunke
+      if nextlink
+        -const href = "./" + link + ".pug"
+        -nextlink = false
+        -indexsperre = ''
+        if seite == 'index'
+          -indexsperre = 'indexsperre'
+        //a(href=href class=indexsperre)
+      if seite == link
+        -nextlink = true
+
+
+
+  div.kontakt
+    p.fett Praxis Dr. Georgii · Rindermarkt 17 (nahe beim Marienplatz) · 80331 München<br>Sprechstunden: Montag bis Freitag 8–12 Uhr · Montag bis Donnerstag 14–18 Uhr · Termine nach Vereinbarung<br>Privatpatienten und Selbstzahler · Tel.: 089 2441056-0
+  div.copyright
+    p Praxis für Dermatologie © 2020
+      br
+      a(href="./impressum.pug") Impressum
+      br
+      a(href="./datenschutz.pug") Datenschutzerklärung
+  div.pfeil.next
+    -var nextlink = false
+    for text,link  in menupunke
+      if nextlink
+        -const href = "./" + link + ".pug"
+        -nextlink = false
+        a(href=href) 
+         span !{text}
+      if seite == link
+        -nextlink = true

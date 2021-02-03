@@ -1,0 +1,50 @@
+extends ./layout
+
+block variablen
+  - const seite = 'tcm'
+  - const title = 'Traditionelle Chinesische Medizin TCM bei Dr. Aletta Georgii'
+  - const keywords = 'Akne, Aknebehandlung, Aknetherapie, Akupunktur, Aletta Georgii, Allergie, Allergietest, Allergologie, Alopezie, Anti Aging, Antiaging, ästhetische Behandlungen, Ästhetische Dermatologie, Ästhetische Medizin, atopisches Ekzem, Autoimmunerkrankung, Behandlung Haarausfall, Behandlung Schwitzen, Besenreiser, Bilddokumentation von Muttermalen, Botox- und Fillerunterspritzung, Botoxbehandlung, Couperose, Derma Zentrum München, Dermatologie, Dermatologische Praxis, Dokumentation von Muttermalen, Dr. Aletta, Dr. Georgii, Faltenbehandlung, Faltenbehandlung mit Fillern, Filler, ganzheitliche Medizin, Gutartige und bösartige Hautveränderungen, Haarausfall, Haarentfernung, Haut-und Geschlechtskrankheiten, Hautanalyse, Hautarzt, Hautärztin, Hautkrebsbehandlung, Hautkrebsvorsorge, Hautscreening, Hautstraffung, Hautveränderung, Heuschnupfen, Hyperhidrosebehandlung mit Botulinumtoxin, Hyperhidrosis, Hypertrichose, Hyposensibilisierung, Kinderdermatologie, Komplementärmedizin, Kontaktallergie, Krampfaderleiden, Krampfadern, Laserbehandlung, Lichen ruber, Lymphdrainage, medizinische Kosmetik, Mesotherapie, Mikroneedling, Muttermal, Nahrungsmittelallergien, Nesselsucht, Neurodermitis, operative Dermatologie, operative Eingriffe, Peelingbehandlung, Phlebologie, Phytotherapie, Praxis für Dermatologie, Psoriasis vulgaris, Rosazea, Schleimhauterkrankungen, Schuppenflechte, Schwitzen, Screening von Muttermalen, TCM, traditionelle chinesische Medizin, übermäßiges Schwitzen, Urtikaria, Verödung, Warzen weg, aktivierung Selbstheilung, alternative Medizin, alternative Hautbehandlung'
+  - const description = 'Profitieren Sie von einer exakt auf Ihre Symptomatik abgestimmten, regulativen Medizin, die Ihre natürlichen Selbstheilungsmechanismen in Gang setzt.'
+
+
+block content
+  div.content.flex.tcm
+    .flex_1_3#bild_leiste
+      -var x = 1;
+      while x <= 8
+        if x < 10
+          - var bild_src = seite + "0" + x + ".jpg";
+        else
+          - var bild_src = seite + x + ".jpg";
+        - x++;
+        -var src = "./assets/images/" + seite + "/" + bild_src;
+        //p= src
+        img.img_gesamte_breite(src=src alt="Selbstheilungsmechanismen")
+    .flex_2_3.vita
+      div#content_leiste
+        h1 „Der Schlüssel zum Erfolg ist Geduld“
+        p.unterheadline Konfuzius
+        p Die Dermatologie hat in den vergangenen Jahren bahnbrechende Fortschritte verzeichnet. Insbesondere werden die Diagnose- und Therapieverfahren von immunologisch und tumorbedingten Erkrankungen immer differenzierter. Dennoch wird die Schulmedizin der Wechselwirkung von individueller Lebenswirklichkeit und inneren Prozessen nicht in allen Facetten gerecht. 
+        h2.rot.x4 TCM – Traditionelle Chinesische Medizin   
+        p Die Traditionelle Chinesische Medizin bietet mit ihrem Wissen um jahrtausendelang sorgfältig beobachtete Krankheitsmuster und die daraus abgeleiteten Heilmethoden eine wunderbare Ergänzung. Wir können durch die Akupunktur die energetischen Leitbahnen beeinflussen und durch Anwendung individuell ausgewählter natürlicher Pflanzen schulmedizinische Medikamente ergänzen oder ersetzen.  
+        p Auf diese Weise profitieren Sie von einer exakt auf Ihre Symptomatik abgestimmten, regulativen Medizin, die Ihre natürlichen Selbstheilungsmechanismen in Gang setzt. Die Kombination von schulmedizinischer Diagnostik bzw. Therapie und Traditioneller Chinesischer Medizin leitet Ihre umfassende Heilung ein. 
+        p
+          strong Folgende Erkrankungen können mit Traditioneller Chinesischer Medizin behandelt werden:  
+        ul
+          li Atopisches Ekzem (Neurodermitis)
+          li Psoriasis vulgaris (Schuppenflechte)
+          li Dyshidrotisches Ekzem der Hände und Füße
+          li Chronisches nummuläres Ekzem
+          li Akne vulgaris
+          li Rosazea
+          li Seborrhoisches Ekzem
+          li Lichen ruber
+          li Alopezie (Haarausfall)
+        h2.rot.x4 Allergologische Erkrankungen: 
+        ul
+          li Urtikaria (Nesselsucht)
+          li Rhinitis allergica (Heuschnupfen)
+          li Nahrungsmittelallergien
+        p Frau Dr. Georgii hält eine zusätzliche Sprechstunde in der Praxis Dr. Josef Hummelsberger, Hackenstraße 7 in 80331 München ab. 
+        p
+          a(href="https://www.hummelsberger.net" target="_blank") www.hummelsberger.net

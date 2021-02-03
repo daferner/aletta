@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: onlinebuchung.html
+
+Sitemap: http://www.hautaerztemuenchen.de/sitemap_hautaerztemuenchen.xml

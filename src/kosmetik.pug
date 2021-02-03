@@ -1,0 +1,45 @@
+extends ./layout
+
+block variablen
+  - const seite = 'kosmetik'
+  - const title = 'Ästhetische Medizin | Medizinische Kosmetik Dr. Georgii'
+  - const keywords = 'Akne, Aknebehandlung, Aknetherapie, Aletta Georgii, Anti Aging, Antiaging, ästhetische Behandlungen, Ästhetische Dermatologie, Ästhetische Medizin, Behandlung Haarausfall, Behandlung Schwitzen, Besenreiser, Botox- und Fillerunterspritzung, Botoxbehandlung, Derma Zentrum München, Dermatologie, Dermatologische Praxis, Dokumentation von Muttermalen, Dr. Aletta, Dr. Georgii, Faltenbehandlung, Faltenbehandlung mit Fillern, Filler, Haarentfernung, Haut-und Geschlechtskrankheiten, Hautanalyse, Hautarzt, Hautärztin, Hautkrebsbehandlung, Hautkrebsvorsorge, Hautscreening, Hautstraffung, Hautveränderung, Heuschnupfen, Hyperhidrosebehandlung mit Botulinumtoxin, Hyperhidrosis, Hypertrichose, Hyposensibilisierung, Kinderdermatologie, Komplementärmedizin, Kontaktallergie, Krampfaderleiden, Krampfadern, Laserbehandlung, Lymphdrainage, medizinische Kosmetik, Mesotherapie, Mikroneedling, operative Dermatologie, operative Eingriffe, Peelingbehandlung, Phytotherapie, Praxis für Dermatologie, Schuppenflechte, Verödung, Warzen weg'
+  - const description = 'Im Sinne einer ganzheitlichen Betrachtung umfasst unser Leistungsangebot auch anspruchsvolle kosmetische Behandlungen.'
+
+
+block content
+  div.content.flex.contentabschluss
+    .flex_1_3#bild_leiste
+      -var x = 1;
+      while x <= 8
+        if x < 10
+          - var bild_src = seite + "0" + x + ".jpg";
+        else
+          - var bild_src = seite + x + ".jpg";
+        - x++;
+        -var src = "./assets/images/" + seite + "/" + bild_src;
+        //p= src
+        img.img_gesamte_breite(src=src alt="Im Sinne einer ganzheitlichen Betrachtung")
+    .flex_2_3.vita
+      div#content_leiste
+        h1 „Was uns an der sichtbaren Schönheit entzückt, ist ewig nur die unsichtbare“
+        p.unterheadline
+          mall Marie von Ebner-Eschenbach
+        p Eine vitale und gepflegte Haut trägt entscheidend zu unserem Wohlbefinden bei. Im Sinne dieser ganzheitlichen Betrachtung umfasst unser Leistungsangebot auch anspruchsvolle kosmetische Behandlungen. Wir führen zunächst eine individuelle Analyse durch, die neben den körperlichen Besonderheiten auch Ihre seelischen Bedürfnisse berücksichtigt. Auf dieser Grundlage entwickeln wir ein speziell auf Ihre Anforderungen abgestimmtes Konzept, das Sie Schritt für Schritt zur bestmöglichen Lösung führt. 
+        h2.rot.x4 Ästhetische Medizin  
+        ul
+          li.anfuehrungszeichen Anti-Aging-Beratung
+          li.anfuehrungszeichen Faltenbehandlung mit Hyaluronsäurefillern und Botulinumtoxin
+          li.anfuehrungszeichen Lippenaugmentation und Volumenaufbau
+          li.anfuehrungszeichen Botulinumtoxin-Injektion bei Mimikfalten und übermäßigem Schwitzen
+          li.anfuehrungszeichen Fadenlifting 
+
+
+        h2.rot.x4 Medizinische Kosmetik  
+        ul
+          li.anfuehrungszeichen Aknebehandlung
+          li.anfuehrungszeichen Peelingbehandlungen
+          li.anfuehrungszeichen Mesotherapie
+          li.anfuehrungszeichen Mikroneedling
+          li.anfuehrungszeichen Lymphdrainage des Gesichtes
+          li.anfuehrungszeichen Mikrodermabrasion 

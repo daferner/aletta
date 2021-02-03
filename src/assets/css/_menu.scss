@@ -1,0 +1,266 @@
+// Navigation
+.mobil_menu{
+   position: fixed;
+   background-color: $hellgrau;;
+   left: 0;
+   right: 0;
+   top: 0;
+   z-index: 998;
+   .logo{
+      width: 60vw;
+      padding: 30px;
+   }
+
+   
+   
+}
+.menu-icon{
+   background-color: $rot;
+   border-radius: 4px;
+   padding: 15px 10px;
+   position: fixed;
+   z-index: 999;
+   right:30px;
+   top:30px;
+   border-radius: 4px; 
+   cursor: pointer;
+   @media screen and ( min-width: $small ){
+      display: none;
+   }
+   .nav-icon{
+      background: #fff;
+      display: block;
+      height: 2px;
+      width: 18px;
+      position: relative;
+      transition: background .2s ease-out;
+      &:before,&:after{
+         content: "";
+         background: #fff;
+         height: 100%;
+         position: absolute;
+         width: 100%;
+         top: -5px;
+         transition: all .3s ease-out;
+      }
+      &:after{
+         top: 5px;
+      }
+   }
+}
+
+ul.navigation{
+   height: auto; 
+   max-height:0px;  
+   transition: all 0.5s;
+   overflow: hidden;
+   margin-top: 10px;
+   padding: 0;
+   position: relative;
+   background-color: $hellgrau;
+   z-index: 900;
+   @media screen and ( min-width: $small ){
+      position: static;
+      background-color: transparent;
+      max-height: 1000px;
+      padding-left: 30px;
+      margin: 0;
+      padding-top: $content_start;
+      max-width: calc(100vw / 4);
+   }
+   @media screen and (min-width: $small)  and (max-height: 800px) and (orientation: landscape){
+      padding-top: 10px;
+   }
+   @media screen and ( min-width: $medium ){
+      max-width: calc(#{$big} / 4);
+   }
+   li{
+      list-style-type: none;
+      a{
+         text-decoration: none;
+         color: $rot;
+         display: inline-block;
+         width: 100%;
+         border-bottom: 1px solid $rot;
+         padding: 1rem 1.5rem;
+         @media screen and ( min-width: $small ){
+            padding: .28rem 0;
+            border:none;
+            
+         }
+      }
+      a:hover{
+         background-color: #fff;
+         @media screen and ( min-width: $small ){
+            background: transparent;
+         }
+      }
+   }
+}
+.menu-btn{
+   display: none;
+   &:checked ~ ul.navigation{
+      max-height: 1000px;
+   }
+   &:checked ~ .menu-icon{
+      .nav-icon{
+         background-color: transparent;
+         &:before{
+            transform:  rotate(315deg);
+            top: 0;
+         }
+         &:after{
+            transform:  rotate(-315deg);
+            top:0;
+         }
+      }
+   }
+}
+
+
+
+
+
+@media screen and ( min-width: $small ){
+   .mobil_menu{
+      display: none;
+   }
+}
+
+
+
+
+
+
+.hamburg { 
+   display: block;
+   background: $rot; 
+   width: 50px; 
+   height: 40px; 
+   position: fixed; 
+   right:30px;
+   top:30px;
+   border-radius: 4px; 
+   transition: border-radius .5s;
+}
+
+.line { 
+   position: absolute; 
+   left:7px;
+   height: 3px; width: 36px; 
+   background: #fff; border-radius: 2px;
+   display: block; 
+   transition: 0.5s; 
+   transform-origin: center; 
+}
+
+.line:nth-child(1) { top: 9px; }
+.line:nth-child(2) { top: 19px; }
+.line:nth-child(3) { top: 29px; }
+
+.hamburg.checked .line:nth-child(1){
+   transform: translateY(12px) rotate(-45deg);
+}
+
+.hamburg.checked .line:nth-child(2){
+   opacity:0;
+}
+
+.hamburg.checked .line:nth-child(3){
+   transform: translateY(-12px) rotate(45deg);
+}
+
+
+// ClickDock
+
+div.termine_btn{
+   position: fixed;
+   z-index: 99999999999;
+   top: 65px;
+   left: auto;
+   right: 30px;
+   max-height: 80px;
+   
+   @media screen and ( min-width: $xsmall ){
+      top: 80px;
+   }
+   @media screen and ( min-width: $small ){
+      position: fixed;
+      bottom: 180px;
+      left: 30px;   
+      right: auto;
+      top: auto;
+   }  
+   @media screen and (min-width: $small)  and (max-height: 800px) and (orientation: landscape){
+
+      
+   }
+   @media screen and ( min-width: $big ){
+
+      left: calc(100vw / 2 - 700px);
+   }   
+
+   
+}
+.impressum_btn{
+   width: 100%;
+   text-align: center;
+   a{
+      margin: 0 auto;
+   }
+}
+a.termine, a.termine:hover{
+      background-color: #fff;
+      border-radius: 5px;
+      border: 1px solid $rot;
+      width: 110px;
+      padding: 3px 0;
+      text-align: center;
+      display: block;
+      margin-top: 5px;
+      font-size: 50%;
+      text-decoration: none;
+      color: #000000;
+      transition: .3ms;
+      @media screen and ( min-width: $xsmall ){
+         padding: 5px 0;
+         font-size: 75%;
+         width: 200px;
+         margin-top: 10px;
+      }
+   }
+   a.termine:hover{
+      box-shadow: 2px 2px 3px rgba($color: #000000, $alpha: 0.3);
+      opacity: .8;
+   }
+/*
+.termine_btn{
+   margin-left: 30px;
+   @media screen and ( min-width: $small ){
+      max-width: calc(100vw / 4);
+   }
+   @media screen and ( min-width: $medium ){
+      max-width: calc(#{$big} / 4);
+   }
+   a.btn{
+      
+      
+   }
+}
+
+
+      position: static;
+      background-color: transparent;
+      max-height: 1000px;
+      padding-left: 30px;
+      margin: 0;
+      padding-top: $content_start;
+      
+   }
+   @media screen and (min-width: $small)  and (max-height: 800px) and (orientation: landscape){
+      padding-top: 10px;
+   }
+   @media screen and ( min-width: $medium ){
+      max-width: calc(#{$big} / 4);
+   }
+*/

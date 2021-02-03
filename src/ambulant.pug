@@ -1,0 +1,38 @@
+extends ./layout
+
+block variablen
+  - const seite = 'ambulant'
+  - const title = 'Ambulante Operationen bei Hautärzte München '
+  - const keywords = 'Akne, Aknebehandlung, Aknetherapie, Akupunktur, Aletta Georgii, ästhetische Behandlungen, Ästhetische Dermatologie, Ästhetische Medizin, Behandlung Haarausfall, Behandlung Schwitzen, Besenreiser, Bilddokumentation von Muttermalen, Botox- und Fillerunterspritzung, Botoxbehandlung, Derma Zentrum München, Dermatologie, Dermatologische Praxis, Dr. Aletta, Dr. Georgii, Faltenbehandlung, Faltenbehandlung mit Fillern, Filler, Gutartige und bösartige Hautveränderungen, Haarentfernung, Haut-und Geschlechtskrankheiten, Hautanalyse, Hautarzt, Hautärztin, Hautkrebsbehandlung, Hautscreening, Hautstraffung, Hautveränderung, Hyposensibilisierung, Kinderdermatologie, Krampfaderleiden, Krampfadern, Laserbehandlung, Lymphdrainage, medizinische Kosmetik, Mesotherapie, Mikroneedling, Muttermal, Nesselsucht, Neurodermitis, operative Dermatologie, operative Eingriffe, ambulante Behandlung, Peelingbehandlung, Phytotherapie, Praxis für Dermatologie, Schuppenflechte, Schwitzen, Screening von Muttermalen, übermäßiges Schwitzen, Verödung, Warzen weg'
+  - const description = 'Die operative Tätigkeit umfasst die Entfernung von gut- und bösartigen Hauttumoren, Fehlbildungen und kosmetisch störenden Hautveränderungen.'
+
+block content
+  div.content.flex.contentabschluss
+    .flex_1_3#bild_leiste
+      -var x = 1;
+      while x <= 5
+        if x < 10
+          - var bild_src = seite + "0" + x + ".jpg";
+        else
+          - var bild_src = seite + x + ".jpg";
+        - x++;
+        -var src = "./assets/images/" + seite + "/" + bild_src;
+        //p= src
+        img.img_gesamte_breite(src=src alt="Die operative Tätigkeit")
+    .flex_2_3.vita
+      div#content_leiste
+        h1 „Unter allen Teilen der Medizin ist der Effekt der Chirurgie der sinnfälligste“
+        p.unterheadline
+          mall Spinoza
+        p Die operative Tätigkeit ist fester Bestandteil unserer Praxis. Sie umfasst die Entfernung von gutartigen und bösartigen Hauttumoren, von Fehlbildungen und von kosmetisch störenden Hautveränderungen. 
+        p Vor jedem Eingriff informieren wir Sie in einem ausführlichen Aufklärungs- und Vorbereitungsgespräch. In diesem Gespräch können Sie alle offenen Fragen mit uns klären. Nach der Operation beurteilen wir die entnommenen Gewebeproben nach der Präparation in unserem dermatohistopathologischen Labor unter dem Mikroskop. Bereits nach wenigen Tagen können wir mit Ihnen das Ergebnis bei einer Nachsorgeuntersuchung besprechen und den Heilungsverlauf begutachten. 
+        p Die Eingriffe an der Haut oder an den Schleimhäuten führen wir ambulant und unter Einsatz örtlicher Betäubungsmittel (Lokalanästhesie) durch. Die Belastung für Sie als Patient wird dabei so gering wie möglich gehalten. Im Allgemeinen können Sie – gegebenenfalls nach kurzer Beobachtung – direkt nach dem Eingriff nach Hause gehen. 
+        p Wir beraten Sie auch gerne bezüglich möglicher Behandlungsmethoden von kosmetisch störenden Hautveränderungen. In vielen Fällen können diese mittels Operation oder Laserbehandlung entfernt werden. 
+        p
+          strong Folgende Hautveränderungen werden häufig in unserer Praxis operativ beseitigt:
+        ul
+          li.anfuehrungszeichen Klinisch auffällige Muttermale
+          li.anfuehrungszeichen Sogenannter weißer Hautkrebs (zum Beispiel aktinische Keratosen, Basaliome)
+          li.anfuehrungszeichen Beginnender schwarzer Hautkrebs (malignes Melanom)
+          li.anfuehrungszeichen Gutartige Tumore der Haut (zum Beispiel Zysten, Lipome, Fibrome, Histiozytome)
+          li.anfuehrungszeichen Veränderungen am Nagelorgan

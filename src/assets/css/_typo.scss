@@ -1,0 +1,164 @@
+
+body{
+   font-size: 10px;
+   font-family: interstate, sans-serif;
+   font-weight: 400;
+   h1{
+      font-family: bodoni-urw, serif;
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: .95;
+   }
+   
+   .rot{
+      color: $rot;
+   }
+   .schlusstext{
+      h1.rot{
+         font-size: 2.8rem;
+      }
+      h1.gross{
+         font-size: 2.8rem;
+         @media screen and (min-width:1250px) {
+            font-size: 3rem;
+         }
+         @media screen and (min-width:1400px) {
+            font-size: 3.5rem;
+         }
+         
+      }
+   }
+   .container{
+      font-size: 1.0rem;
+      @media screen and ( min-width: $medium ){
+         font-size: 1rem;
+      }
+   }
+   footer{
+      font-size: .8rem;
+      @media screen and ( min-width: $medium ){
+         font-size: .9rem;
+      }
+      .copyright{
+         font-size: .8rem;
+         a{
+            text-decoration: none;
+            color: white;
+         }
+         a:hover{
+            text-decoration: underline;
+            
+         }
+      }
+   }
+   .navigation{
+      a{
+         line-height: 1;
+         font-size: .9rem;
+         
+         @media screen and ( min-width: $medium ){
+            font-size: 1rem;
+            padding: .31rem 0;
+         }
+      }
+      a:hover, a.aktiv{
+         font-weight: 700;
+      }
+   }
+   .infospalte{
+      .info{
+         p{
+            display: inline-block;
+            line-height: 1.4;
+            font-size: .9rem;
+            @media screen and ( min-width: $medium ){
+               font-size: 1rem;
+               margin-left: 1.5rem;
+            }
+            strong{
+               line-height: 1.4;
+               font-size: 0.7rem;
+               @media screen and ( min-width: $medium ){
+                  font-size: .9rem;
+               }
+            }
+         }
+      }
+      
+   }
+}
+.content{
+   a{
+      text-decoration: none;
+      color: #000;
+      &:hover{
+         color: $dunkelgrau;
+      }
+   }
+   h2.x4,h3.x4{
+      font-size: 1rem;
+   }
+
+   .vita{
+      padding-left: 40px;
+      h1{
+         font-size: 1.8rem;
+      }
+      h2{
+         margin-top: 0;
+         color: $rot;
+         font-size: 1.4rem;
+      }
+      h3{
+         margin-top: 0;
+         color: $rot;
+         font-size: 1.4rem;
+      }
+      p{
+         margin-top: 1.7rem;
+         margin-bottom: 1.7rem;
+         font-size: .9rem;
+         line-height: 1.3;
+         span.jahr{
+            display: inline-block;
+            width: 5.5rem;
+         }
+      }
+      ul{
+         margin: 0;
+         padding: 0;
+         li{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+            padding-bottom: .3rem;
+         }
+         li.anfuehrungszeichen{
+            list-style-type: square;
+            margin-left: 1.5rem;
+            font-size: .9rem;
+         }
+      }
+   }
+   .berichte{
+      h3,h4,h5{
+         font-size: 1rem;
+      }
+   }
+   .datenschutz{
+      p{
+         margin: 1.5rem 0;
+      }
+      p.i{
+         color: rgba($color: #000000, $alpha: .6);
+      }
+      ol{
+         margin: -1rem 0;
+         li{
+            padding: 5px 0;
+         }
+      }
+   }
+}
+

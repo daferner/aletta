@@ -1,0 +1,26 @@
+extends ./layout
+
+block variablen
+  - const seite = 'behandlungszeiten'
+  - const title = 'Behandlungszeiten | Öffnungszeiten Dr. Aletta Georgii'
+  - const keywords = 'Behandlungszeiten, Öffnungszeiten, Zeiten, Aletta Georgii, Dermatologie, Dermatologische Praxis, Hautartz, Hautärzte, Hautärztinnen, Hautarztpraxis, München'
+  - const description = 'Unsere Praxissprechzeiten: Montag bis Freitag: 8–12 Uhr, Montag bis Donnerstag: 14–18 Uhr - Wir freuen uns auf Ihren Besuch in unserer Praxis!'
+
+block content
+  div.content.contentabschluss
+    h1 „Die Praxis ist sehr zentral gelegen und optimal zu erreichen. So kann ich in der Stadt noch ein paar Erledigungen machen und finde hier meine Ruhe“ 
+    p.unterheadline
+      small Peter W. aus München 
+    p Großzügige, helle Räumlichkeiten und eine angenehme Atmosphäre sollen dazu beitragen, dass Sie sich in unserer Praxis von Beginn an wohlfühlen.  
+    h2.rot.x4 Unsere Praxissprechzeiten: 
+    table()
+      tr
+        td(style="padding: 0 20px 25px 0;") Montag bis Freitag
+        td(align="right" style="padding: 0 0 25px 30px;") 8–12 Uhr
+      tr
+        td(style="padding: 0 20px 25px 0;") Montag bis Donnerstag
+        td(align="right" style="padding: 0 0 25px 30px;") 14–18 Uhr
+    p Zusätzlich bieten wir Ihnen Privatsprechstunden nach Vereinbarung an. 
+    p Wichtiger Bestandteil unseres Behandlungskonzepts ist ein konsequentes Bestellsystem, um Wartezeiten so gut wie möglich zu vermeiden. Ihre Termine werden nach vorheriger telefonischer Vereinbarung für Sie reserviert. Deshalb bitten wir Sie auch, rechtzeitig telefonisch abzusagen, wenn Sie verhindert sein sollten. Vielen Dank. 
+    h2.rot.x4 Terminanfragen können Sie gerne auch schriftlich stellen an: <br> <a href="mailto:info@hautaerztemuenchen.de" class="rot">info@hautaerztemuenchen.de</a>
+    p Wir rufen Sie dann baldmöglichst zurück.  

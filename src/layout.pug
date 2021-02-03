@@ -1,0 +1,47 @@
+doctype html
+html(lang="de")
+  block variablen
+    - const seite ='index'
+    - const title = 'Dr. Aletta Georgii'
+    - const keywords = 'Dr. Aletta Georgii, München, Privatpraxis, Haut, Hautarzt, Hautärztin, Hautärzte, Dermatologie, Gemeinschaftspraxis, Privatpatienten, Selbstzahler allgemeine Dermatologie, Allergologie, ambulante Operationen, Phlebologie, ästhetische Medizin, Lasertherapie, medizinische Kosmetik, traditionelle chinesische Medizin'
+    - const description = 'Willkommen bei Dr. Aletta Georgii, Privatpraxis für Dermatologie in München. Ihre Haut liegt uns am Herzen'
+    
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="author" content="Dr. Aletta Georgii, München")
+    meta(name="publisher" content="Dr. Aletta Georgii, München")
+    meta(name="robots" content="INDEX,FOLLOW")
+    meta(name="language" content="de")
+    meta(name="keywords" lang="de" content=keywords)
+    meta(name="description" lang="de" content=description)
+    title=title
+    - const canonical = "https://www.hautaerztemuenchen.de/" + seite + ".html"
+    link(rel="canonical" href=canonical)
+    link(rel="apple-touch-icon" href="/apple-touch-icon.png")
+    link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
+    link(rel="stylesheet" href="https://use.typekit.net/nsj7gva.css")
+    link(rel="stylesheet" href="./assets/css/all.scss")
+    link(rel="shortcut icon" type="image/x-icon" href="/favicon.ico")
+    script(src="./assets/js/script.js")
+  body
+
+    div.container
+      div.spalte
+
+        include ./includes/menu
+
+      div.spalte.center-spalte
+
+        block content
+
+      if seite != 'onlinebuchung'
+         include ./includes/infospalte
+
+    if seite == 'onlinebuchung'
+      include ./includes/nur_logo.pug
+    include ./includes/footer
+
+

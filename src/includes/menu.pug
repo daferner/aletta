@@ -1,0 +1,29 @@
+div.mobil_menu
+   div.logo
+      object(type="image/svg+xml" data="./assets/images/Logo.svg")
+   //a(href="#" id="testbutton") Test
+
+   div.tester
+div.fix
+   input(type="checkbox" id="menu-btn" class="menu-btn")
+   label(for="menu-btn" class="menu-icon")
+      span.nav-icon
+         //span.nav-icon
+         //span.nav-icon
+   ul.navigation
+      li
+         - const menupunke = {"index": "Startseite","team": "Team","aletta": "Dr. Aletta Georgii","aerztinnen": "Die Ärztinnen","philosophie": "Philosophie","leistungen": "Leistungen","ambulant": "Ambulante Operationen","kosmetik": "Ästhetische Medizin <br> Medizinische Kosmetik","tcm": "Traditionelle Chinesische Medizin","behandlungszeiten": "Behandlungszeiten","anfahrt": "Anfahrt","links": "Links","aktuelles": "Aktuelles","berichte": "Wissenschaftliche Beiträge","impressum": "Impressum/Kontakt","datenschutz": "Datenschutzerklärung"};
+         - const menupunktID = 0;
+         - var href = 'index'
+         for text,link  in menupunke
+            if link != 'index'
+               -var href = "./" + link + ".pug"
+                  //-var href = "./" + link
+               if link == seite 
+                  a(href=href class="aktiv") !{text}
+               else
+                  a(href=href ) !{text}
+   div.termine_btn
+      a(class="btn termine" href="./onlinebuchung.pug" target="_blank") Termin online buchen
+      //a(class="btn termine" href="https://de.doctena.de/behandler/Dr_Aletta_Georgii-906686#16035" target="_blank") Termin online buchen
+      //a(class="btn termine" href="https://xxx.de" target="_blank") Video-Sprechstunde buchen
