@@ -5,3 +5,12 @@ del
 package-lock.json
 dist
 dist/
+/node_modules
+/node_modules/
+/cache
+/.cache
+/del
+/.cache/
+/package-lock.json
+/dist
+/dist/
