@@ -410,3 +410,13 @@ img.aktuelles{
       left: calc(50% + (#{$big}/4));
    }
 }
+
+p.zitat{
+  margin-bottom: 1.7rem;
+  
+}
+p.unterheadline{
+  small{
+    padding-right: .9rem;
+  }
+}
