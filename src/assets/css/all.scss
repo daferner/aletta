@@ -201,6 +201,15 @@ body{
       text-align: right;
    }
 }
+.zwischenspalte{
+  padding: 0 200px;
+  p.unterheadline{
+      font-size: .9rem;
+      text-align: right;
+   }
+   
+   @media screen and ( min-width: $small ){padding: 0 2px;}
+}
 .content2{
    @media screen and ( min-width: $small ){padding-top:1rem;}
 }
