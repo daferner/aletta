@@ -1,6 +1,8 @@
 User-agent: *
 Disallow: onlinebuchung.html
-Disallow: datenschutz.html
 Disallow: /onlinebuchung.html
+Disallow: datenschutz.html
 Disallow: /datenschutz.html
+Disallow: impressum.html
+Disallow: /impressum.html
 Sitemap: https://www.hautaerztemuenchen.de/sitemap_hautaerztemuenchen.xml
