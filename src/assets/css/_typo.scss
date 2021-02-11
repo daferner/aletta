@@ -4,7 +4,6 @@ body{
    font-family: interstate, sans-serif;
    font-weight: 400;
    h1{
-      font-family: bodoni-urw, serif;
       font-weight: 300;
       font-size: 2rem;
       line-height: .95;
@@ -109,7 +108,11 @@ body{
    h2.x4,h3.x4,h4.x4{
       font-size: 1rem;
    }
-
+   h1{
+     color: $rot;
+     font-size: 1.3rem;
+     font-weight: 600;
+   }
    .vita{
       padding-left: 40px;
       h1{
