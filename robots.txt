@@ -7,4 +7,6 @@ Disallow: impressum.html
 Disallow: /impressum.html
 Disallow: anfahrt.html
 Disallow: /anfahrt.html
+Disallow: berichte.html
+Disallow: /berichte.html
 Sitemap: https://www.hautaerztemuenchen.de/sitemap_hautaerztemuenchen.xml
