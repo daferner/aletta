@@ -114,15 +114,20 @@ body{
          flex-shrink: 1;
          flex-basis: calc(#{$big}/4);
       }
-      p.zitat{
+      p.meinungen{
         margin-left: 15px;
         margin-right: 210px;
         padding-bottom: 20px;
         small{
           float: right;
+          font-size: .8rem;
+          font-weight: 200;
+          font-family: interstate, sans-serif;
+          padding-top: 10px;
+          padding-right: 20px;
         }
       }
-      p.zitat_right{
+      p.meinungen_right{
         margin-left: 210px;
         margin-right: 15px;
       }
