@@ -1,0 +1,22 @@
+RewriteEngine  on
+Options +FollowSymlinks
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule (.*) https://www.hautaerztemuenchen.de/$1 [R=301,L]
+
+
+
+Redirect 301 /team/ https://www.hautaerztemuenchen.de/team.html
+Redirect 301 /aletta-georgii/ https://www.hautaerztemuenchen.de/aletta.html
+Redirect 301 /philosophie/ https://www.hautaerztemuenchen.de/philosophie.html
+Redirect 301 /leistungen/ https://www.hautaerztemuenchen.de/leistungen.html
+Redirect 301 /ambulante-operationen/ https://www.hautaerztemuenchen.de/ambulant.html
+Redirect 301 /aesthetische_medizin_und_medizinische_kosmetik/ https://www.hautaerztemuenchen.de/kosmetik.html
+Redirect 301 /traditionelle-chinesische-medizin/ https://www.hautaerztemuenchen.de/tcm.html
+Redirect 301 /behandlungszeiten/ https://www.hautaerztemuenchen.de/behandlungszeiten
+Redirect 301 /anfahrt/ https://www.hautaerztemuenchen.de/anfahrt.html
+Redirect 301 /links/ https://www.hautaerztemuenchen.de/links.html
+Redirect 301 /aktuelles/ https://www.hautaerztemuenchen.de/aktuelles.html
+Redirect 301 /wissenschaft/ https://www.hautaerztemuenchen.de/berichte.html
+Redirect 301 /impressum/ https://www.hautaerztemuenchen.de/impressum.html
+Redirect 301 /datenschutz/ https://www.hautaerztemuenchen.de/datenschutz.html

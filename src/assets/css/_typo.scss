@@ -9,10 +9,15 @@ body{
       font-size: 2rem;
       line-height: .95;
    }
-   
+   .zitat{
+     font-family: bodoni-urw, serif;
+     font-size: 1.3rem;
+     line-height: .92;
+   }
    .rot{
       color: $rot;
    }
+   
    .schlusstext{
       h1.rot{
          font-size: 2.8rem;
@@ -128,6 +133,10 @@ body{
             display: inline-block;
             width: 5.5rem;
          }
+      }
+      p.pseulist{
+        font-size: 1rem;
+        line-height: 1.4;
       }
       ul{
          margin: 0;
