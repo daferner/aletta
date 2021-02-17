@@ -176,8 +176,9 @@ body{
       height: auto;
    }
    p{
-      margin-top: 3.6rem;
-      margin-bottom: 3.6rem;
+      margin-top: 2.1rem;
+      margin-bottom: 2.1rem;
+      line-height: 140%;
    }
    .berichte{
       border-bottom: 1px solid black;
@@ -188,6 +189,18 @@ body{
       p{
          margin: 1.5rem 0;
       }
+   }
+   .lebenslauf{
+     p{
+       display: flex;
+       flex-direction: row;
+       .jahr{
+         flex: 0 0 5.5rem;
+       }
+       .text{
+         flex: 1 1 auto;
+       }
+     }
    }
 }
 .schlusstext{
